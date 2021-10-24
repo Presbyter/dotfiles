@@ -17,6 +17,9 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'itchyny/vim-cursorword'
+Plugin 'kien/ctrlp.vim'
+Plugin 'dracula/vim', { 'name': 'dracula' }
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -44,13 +47,14 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Vim-go
 let g:go_fmt_command = "goimports"
 let g:go_auto_type_info = 1 " Automatically get signature/type info for object under cursor
+let g:go_def_mode = 'gopls'
 
 " YouCompleteMe
 let g:ycm_python_binary_path = '/usr/local/bin/python'
 let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 
 " Color Scheme
-colorscheme gotham256
+colorscheme dracula
 
 " Toggle vertical and horizontal line
 set cursorline
@@ -58,3 +62,19 @@ set cursorcolumn
 set cc=120
 
 set number
+syntax on
+set showmode
+set t_Co=256
+set autoindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set softtabstop=4
+set relativenumber
+set laststatus=2
+set statusline=%F%m%r%h%w\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
+set hlsearch
+set incsearch
+set ignorecase
+set wildmenu
+set nowrap
