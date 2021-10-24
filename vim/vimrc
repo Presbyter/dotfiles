@@ -52,6 +52,9 @@ let g:go_def_mode = 'gopls'
 " YouCompleteMe
 let g:ycm_python_binary_path = '/usr/local/bin/python'
 let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+let g:ycm_gopls_binary_path = 'gopls'
+let g:ycm_gopls_args = ['-remote=auto']
+set completeopt-=preview
 
 " Color Scheme
 colorscheme dracula
