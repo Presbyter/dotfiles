@@ -20,6 +20,7 @@ Plugin 'itchyny/vim-cursorword'
 Plugin 'kien/ctrlp.vim'
 Plugin 'dracula/vim', { 'name': 'dracula' }
 Plugin 'tpope/vim-fugitive'
+Plugin 'ryanoasis/vim-devicons'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -82,3 +83,4 @@ set ignorecase
 set wildmenu
 set nowrap
 set backspace=indent,eol,start
+set encoding=UTF-8
