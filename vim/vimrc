@@ -84,3 +84,6 @@ set wildmenu
 set nowrap
 set backspace=indent,eol,start
 set encoding=UTF-8
+set foldmethod=syntax
+set foldnestmax=1
+set foldenable
